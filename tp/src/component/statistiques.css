@@ -1,0 +1,35 @@
+/* src/components/Statistiques.css */
+.statistiques {background: white;border-radius: 15px;padding: 25px;
+ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); margin-bottom: 30px;
+ border: 1px solid #e0e0e0;}
+.statistiques h2 {color: #2c3e50;margin-bottom: 25px; text-align: center;
+ font-size: 1.5em;}
+.stats-grid {display: grid;grid-template-columns: repeat(auto-fit,
+minmax(200px, 1fr)); gap: 20px;}
+.stat-item {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ color: white;padding: 25px 20px;border-radius: 12px;text-align:
+center;transition: all 0.3s ease;position: relative;overflow: hidden;}
+.stat-item::before {content: '';position: absolute;top: 0;left: 0;right:
+0;height: 4px;background: rgba(255, 255, 255, 0.3);}
+.stat-item:hover {transform: translateY(-3px);box-shadow: 0 8px 20px
+rgba(0, 0, 0, 0.2);}
+.stat-item.total {background: linear-gradient(135deg, #667eea 0%, #764ba2
+100%);}
+.stat-item.disponibles { background: linear-gradient(135deg, #4CAF50 0%,
+#8BC34A 100%);}
+.stat-item.vendues {background: linear-gradient(135deg, #FF9800 0%, #FFB74D
+100%);}
+.stat-item.maintenance {background: linear-gradient(135deg, #FF5722 0%,
+#FF8A65 100%);}
+.stat-item.prix-moyen {background: linear-gradient(135deg, #9C27B0 0%,
+#E1BEE7 100%);}
+.stat-item.km-moyen {background: linear-gradient(135deg, #2196F3 0%,
+#90CAF9 100%);}
+.stat-icone {font-size: 2em; margin-bottom: 10px;}
+.stat-valeur {font-size: 2.2em;font-weight: 700; margin-bottom: 5px;}
+.stat-label {font-size: 0.9em;opacity: 0.9;font-weight: 500;}
+@media (max-width: 768px) {
+ .stats-grid {grid-template-columns: repeat(auto-fit, minmax(150px,
+1fr)); gap: 15px; }
+ .stat-valeur {font-size: 1.8em;}
+}

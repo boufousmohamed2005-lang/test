@@ -1,0 +1,26 @@
+/* src/components/FormulaireVoiture.css */
+.formulaire-voiture { background: white;border-radius: 15px;padding: 30px;
+ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);margin-bottom: 30px;
+ border: 1px solid #e0e0e0;}
+.formulaire-voiture h2 {color: #2c3e50;margin-bottom: 25px;text-align:
+center;font-size: 1.6em;}
+.form-row {display: grid;grid-template-columns: 1fr 1fr;gap: 20px;
+ margin-bottom: 20px;}
+.form-group {display: flex;flex-direction: column;}
+.form-group label {font-weight: 600;margin-bottom: 8px;color: #555;
+ font-size: 0.95em;}
+.form-group input,
+.form-group select {padding: 12px 15px;border: 2px solid #e0e0e0;
+ border-radius: 8px;font-size: 14px;transition: all 0.3s ease;
+ background: white;}
+.form-group input:focus,
+.form-group select:focus {outline: none;border-color: #4CAF50;
+ box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);}
+.form-actions {display: flex;gap: 15px;justify-content: center;
+ margin-top: 30px;padding-top: 20px;border-top: 2px solid #f0f0f0;}
+.form-actions .btn {min-width: 140px;font-size: 1em;}
+@media (max-width: 768px) {
+ .form-row {grid-template-columns: 1fr;}
+ .form-actions {flex-direction: column;}
+ .form-actions .btn {min-width: auto; }
+}

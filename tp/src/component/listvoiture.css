@@ -1,0 +1,16 @@
+/* src/components/ListeVoitures.css */
+.liste-voitures {margin-top: 30px;}
+.en-tête-liste {display: flex;justify-content: space-between;align-items:
+center;margin-bottom: 25px;flex-wrap: wrap;gap: 15px;}
+.en-tête-liste h2 {color: white;font-size: 1.8em;margin: 0;}
+.filtres {display: flex;gap: 10px;align-items: center;flex-wrap: wrap;}
+.filtres select,
+.filtres input {padding: 10px 15px;border: 1px solid #ddd;border-radius:
+8px;font-size: 14px;background: white;min-width: 150px;}
+.filtres input { width: 150px;}
+.grille-voitures {display: grid;grid-template-columns: repeat(auto-fill,
+minmax(350px, 1fr));gap: 25px;margin-top: 20px;}
+@media (max-width: 768px) {.en-tête-liste {flex-direction: column;align-items: stretch;}
+.filtres {justify-content: center;}
+.grille-voitures {grid-template-columns: 1fr;}
+}

@@ -1,4 +1,12 @@
 {
+  "scripts": {
+    "start": "npm --prefix tp run start",
+    "build": "npm --prefix tp run build",
+    "test": "npm --prefix tp run test",
+    "predeploy": "npm run build",
+    "deploy": "npm --prefix tp run deploy",
+    "eject": "npm --prefix tp run eject"
+  },
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
